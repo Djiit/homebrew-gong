@@ -5,20 +5,20 @@
 class Gong < Formula
   desc "Gong"
   homepage "https://github.com/Djiit/gong"
-  version "0.1.5"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Djiit/gong/releases/download/v0.1.5/gong_0.1.5_darwin_amd64.tar.gz"
-      sha256 "2e8bc037e064829c2ace30080f12248c889cd65aecc758f1ce2f4d64bb559c3d"
+      url "https://github.com/Djiit/gong/releases/download/v0.2.0/gong_0.2.0_darwin_amd64.tar.gz"
+      sha256 "06e81b0ab8c6c5e17c074ab3ec85c900bd345381abd72483b0be3f626243fdf1"
 
       def install
         bin.install "gong"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Djiit/gong/releases/download/v0.1.5/gong_0.1.5_darwin_arm64.tar.gz"
-      sha256 "9d50e25e1d0c5ea2fead7b92a75e776f9ed878316321e996e945c7500de8339f"
+      url "https://github.com/Djiit/gong/releases/download/v0.2.0/gong_0.2.0_darwin_arm64.tar.gz"
+      sha256 "653d7d20ac274b1fee67f6fb0f27d1bd039e511ce254ec9ad0c3b801dc245898"
 
       def install
         bin.install "gong"
@@ -29,8 +29,8 @@ class Gong < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Djiit/gong/releases/download/v0.1.5/gong_0.1.5_linux_amd64.tar.gz"
-        sha256 "b618ddeca01df3c5904987756a63671ea8fdbe2657cca025ab48e077ecb94ff5"
+        url "https://github.com/Djiit/gong/releases/download/v0.2.0/gong_0.2.0_linux_amd64.tar.gz"
+        sha256 "3946958609f222a03edd26d46ab254637bf609e6a64f25f6b5426bdc92133db1"
 
         def install
           bin.install "gong"
